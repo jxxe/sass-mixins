@@ -9,19 +9,19 @@
         display: block;
         position: absolute;
         @if $position == 'bottom' {
-            bottom: calc( -1 * #{$gap} / 2 );
+            bottom: calc( -1 * (#{$gap} - 1px) / 2 );
         } @else if $position == 'top' {
-            top: calc( -1 * #{$gap} / 2 );
+            top: calc( -1 * (#{$gap} - 1px) / 2 );
         } @else if $position == 'left' {
             top: 0;
             width: 1px;
             height: 100%;
-            left: calc( -1 * #{$gap} / 2 );
+            left: calc( -1 * (#{$gap} - 1px) / 2 );
         } @else if $position == 'right' {
             top: 0;
             width: 1px;
             height: 100%;
-            right: calc( -1 * #{$gap} / 2 );
+            right: calc( -1 * (#{$gap} - 1px) / 2 );
         } @else {
             @error 'Invalid position value.';
         }
