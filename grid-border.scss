@@ -1,4 +1,4 @@
-@mixin gridBorder($position, $gap: var(--gap), $color: var(--light)) {
+@mixin gridBorder($position, $gap, $color) {
     position: relative;
 
     &:after {
