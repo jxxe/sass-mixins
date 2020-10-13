@@ -1,0 +1,10 @@
+[data-lines] {
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+@for $i from 1 through 10 {
+    [data-lines="#{$i}"] { -webkit-line-clamp: $i; }
+}
